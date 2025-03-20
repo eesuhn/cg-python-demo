@@ -22,7 +22,7 @@ Demo playground for the [`cg-python`](https://github.com/eesuhn/cg-python) SDK.
 1. Fetch the `cg-python` SDK:
 
     ```bash
-    git submodule update --init --recursive
+    make submodule
     ```
 
 2. Install the SDK in project environment:

@@ -38,8 +38,10 @@ fclean: clean
 
 re: fclean all
 
-sdk: venv
+submodule:
 	@git submodule update --init --recursive
+
+sdk: venv submodule
 	@./$(VENV)/bin/pip install --upgrade ./cg-python
 
-.PHONY: all venv command run lint test clean fclean re sdk
+.PHONY: all venv command run lint test clean fclean re submodule sdk
