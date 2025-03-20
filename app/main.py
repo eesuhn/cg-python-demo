@@ -78,6 +78,6 @@ class Main:
         api_instance = PoolsApi(self.api_client)
         try:
             api_response = api_instance.pools_megafilter()
-            print_json(api_response)
+            print_json(api_response.to_dict())
         except ApiException as e:
             print("Exception when calling PoolsApi->pools_megafilter: %s\n" % e)
