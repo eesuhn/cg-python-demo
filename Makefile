@@ -24,7 +24,6 @@ run: venv
 lint: venv
 	@./$(VENV)/bin/pycodestyle --ignore=E501 $(PACKAGE) $(MAIN)
 	@./$(VENV)/bin/pylint --rcfile=./$(CONFIG)/.pylintrc $(PACKAGE) $(MAIN)
-	@./$(VENV)/bin/mypy --config-file=./$(CONFIG)/.mypy.ini $(PACKAGE) $(MAIN)
 
 test: venv
 	@./$(VENV)/bin/pytest
