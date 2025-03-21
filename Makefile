@@ -39,7 +39,7 @@ fclean: clean
 re: fclean all
 
 submodule:
-	@git submodule update --init --recursive
+	@git submodule update --init --remote --recursive
 
 sdk: venv submodule
 	@./$(VENV)/bin/pip install --upgrade ./cg-python

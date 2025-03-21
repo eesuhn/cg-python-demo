@@ -1,3 +1,4 @@
 [submodule "cg-python"]
 	path = cg-python
 	url = https://github.com/eesuhn/cg-python.git
+	branch = main
